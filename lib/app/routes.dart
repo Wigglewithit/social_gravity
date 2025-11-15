@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../features/gravity_feed/presentation/pages/gravity_feed_page.dart';
+import '../features/gravity_feed/gravity_feed_screen.dart';
 
 class AppRoutes {
   static const String gravityFeed = '/';
@@ -9,7 +9,7 @@ class AppRoutes {
       case gravityFeed:
       default:
         return MaterialPageRoute(
-          builder: (_) => const GravityFeedPage(),
+          builder: (_) => const GravityFeedScreen(),
           settings: settings,
         );
     }
